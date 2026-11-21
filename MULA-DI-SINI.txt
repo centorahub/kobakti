@@ -1,0 +1,34 @@
+KOBAKTI V5 — PAKEJ GITHUB + CLOUDFLARE PAGES + PAGES CMS
+
+PENTING: Jangan upload ZIP sebagai satu fail. Ekstrak ZIP dahulu.
+
+APA YANG ADA DALAM PAKEJ
+- index.html: website V5.
+- .pages.yml: konfigurasi Pages CMS.
+- content/site.json: teks utama, maklumat koperasi, senarai kelebihan, syarat kelayakan, alamat, telefon dan video.
+- content/posters.json: senarai poster (bermula kosong).
+- media/posters/: folder media poster.
+- .nojekyll: fail penanda untuk hosting statik.
+- SEMAKAN-TEKNIKAL.txt: skop dan status ujian.
+
+LANGKAH PEMASANGAN (DILAKUKAN SELEPAS PAKEJ DISAHKAN)
+1. Ekstrak ZIP.
+2. Muat naik SEMUA kandungan di dalam ZIP ke ROOT repository GitHub centorahub/kobakti. Pastikan index.html dan .pages.yml berada terus di root, bukan di dalam subfolder tambahan.
+3. Dalam Cloudflare Pages, sambungkan repository GitHub centorahub/kobakti melalui Git integration. Untuk HTML statik tanpa proses build, gunakan build command kosong dan output directory '.' (root). Pilih branch main.
+4. Selepas deployment berjaya, buka https://app.pagescms.org dan log masuk menggunakan GitHub.
+5. Pasang/benarkan Pages CMS GitHub App pada repository centorahub/kobakti dan pilih branch main.
+6. Pages CMS akan membaca .pages.yml. Edit kandungan melalui Kandungan Website dan Poster & Hebahan.
+7. Setiap simpanan CMS menghasilkan perubahan/commit di GitHub. Cloudflare Pages yang disambungkan kepada GitHub akan menerbitkan perubahan mengikut tetapan deployment.
+
+VIDEO
+Masukkan pautan YouTube biasa seperti https://www.youtube.com/watch?v=... atau https://youtu.be/... . Website menukarkannya kepada pautan embed.
+
+SKOP EDITOR
+Boleh disunting melalui CMS: hero, pengenalan/sejarah/matlamat koperasi, senarai kelebihan, syarat kelayakan, alamat dan telefon pejabat, pautan video dan poster.
+Kekal dalam kod: kadar keuntungan, jadual bayaran balik, tiga kotak kuning utama, logo rakan kerjasama, struktur borang dan nombor WhatsApp/CTA.
+
+KESELAMATAN
+JANGAN muat naik slip gaji, kad pengenalan, nombor akaun atau dokumen pemohon ke GitHub, CMS atau folder media. Borang website hanya membuka WhatsApp Lisa dengan mesej praisi. Pemohon perlu menekan Send sendiri dan menghantar slip gaji terus melalui WhatsApp.
+
+STATUS
+Pakej ini telah disemak dari segi struktur, konfigurasi dan sintaks. Log masuk GitHub, pemasangan GitHub App, upload poster melalui CMS dan deployment Cloudflare memerlukan sambungan akaun pemilik; ia belum boleh dianggap telah diuji sebelum langkah itu dibuat.

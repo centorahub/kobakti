@@ -1,0 +1,92 @@
+media:
+  input: media
+  output: /media
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
+content:
+- name: site
+  label: Kandungan Website
+  type: file
+  path: content/site.json
+  format: json
+  fields:
+  - name: hero_eyebrow
+    label: Label utama
+    type: string
+  - name: hero_heading
+    label: Frasa penegasan tajuk utama
+    type: string
+  - name: hero_intro
+    label: Penerangan utama
+    type: text
+  - name: about_heading
+    label: Tajuk mengenai KOBAKTI
+    type: string
+  - name: about_p1
+    label: Pengenalan koperasi
+    type: text
+  - name: about_p2
+    label: Sejarah koperasi
+    type: text
+  - name: about_p3
+    label: Matlamat koperasi
+    type: text
+  - name: benefits_heading
+    label: Tajuk kelebihan pembiayaan
+    type: string
+  - name: benefits
+    label: Senarai kelebihan pembiayaan
+    type: string
+    list: true
+  - name: eligibility_heading
+    label: Tajuk syarat kelayakan
+    type: string
+  - name: eligibility
+    label: Senarai syarat kelayakan
+    type: string
+    list: true
+  - name: office_address
+    label: Alamat pejabat
+    type: string
+  - name: office_phone
+    label: Telefon pejabat
+    type: string
+  - name: video_url
+    label: Pautan YouTube (pautan biasa atau embed)
+    type: string
+- name: posters
+  label: Poster & Hebahan
+  type: file
+  path: content/posters.json
+  format: json
+  list: true
+  fields:
+  - name: title
+    label: Tajuk poster
+    type: string
+  - name: alt
+    label: Teks alternatif
+    type: string
+  - name: image
+    label: Muat naik poster
+    type: image
+    options:
+      path: posters
+      extensions:
+      - jpg
+      - jpeg
+      - png
+      - webp
+  - name: link
+    label: Pautan apabila poster diklik
+    type: string
+  - name: active
+    label: Paparkan poster
+    type: boolean
+settings:
+  content:
+    merge: true

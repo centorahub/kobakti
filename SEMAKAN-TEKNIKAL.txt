@@ -1,0 +1,58 @@
+LAPORAN SEMAKAN TEKNIKAL — KOBAKTI V5 + PAGES CMS
+Tarikh: 21 November 2026
+
+SKOP PAKEJ
+- Website statik berdasarkan reka bentuk V5 yang dibekalkan.
+- Pages CMS menggunakan GitHub sebagai storan kandungan dan media.
+- Cloudflare Pages untuk hosting/deployment statik.
+
+KANDUNGAN YANG DIPETAKAN KE CMS
+- Label hero, tajuk hero dan penerangan utama.
+- Tajuk serta tiga perenggan maklumat KOBAKTI.
+- Tajuk dan senarai kelebihan pembiayaan.
+- Tajuk dan senarai syarat kelayakan.
+- Alamat dan telefon pejabat.
+- Pautan video YouTube.
+- Poster: tajuk, alt text, imej, pautan dan status aktif.
+
+KANDUNGAN YANG KEKAL DALAM KOD V5
+- Kadar keuntungan dan jadual bayaran balik.
+- Tiga kotak kuning utama.
+- Logo rakan kerjasama di footer.
+- Medan dan pilihan borang semakan.
+- Nombor WhatsApp pegawai dan CTA tetap.
+Perubahan pada kandungan ini memerlukan kemas kini kod dan semakan sebelum diterbitkan.
+
+SEMAKAN STATIK YANG LULUS
+- HTML berjaya dihuraikan.
+- Sasaran pautan dalaman utama wujud.
+- Konfigurasi .pages.yml sah sebagai YAML.
+- content/site.json dan content/posters.json sah sebagai JSON.
+- Skema Pages CMS menggunakan file JSON dan field list yang disokong dokumentasi rasmi.
+- Laluan media ditetapkan ke media/ dan URL awam /media/.
+- Pemetaan data-cms/data-cms-list pada HTML sepadan dengan kunci content/site.json.
+- Kod JavaScript inline lulus semakan sintaks Node.js.
+- Borang mewajibkan nama, telefon, majikan, jumlah, pegawai dan persetujuan; masa dihubungi pilihan.
+- Borang membina mesej WhatsApp ke nombor Lisa 011-7601-7810. Pengguna masih perlu menekan Send sendiri.
+- WhatsApp Amli 010-434-6939 dan CTA terapung oren wujud.
+- CSS mempunyai media query untuk skrin kecil.
+
+UJIAN PELAYAR
+- Ujian render automatik perlu dianggap berasingan daripada semakan statik. Screenshot/ujian interaksi dalam persekitaran ini belum menjadi bukti bahawa paparan sebenar pada peranti Lisa sudah lulus.
+
+BELUM BOLEH DISAHKAN SEBELUM AKAUN PEMILIK DISAMBUNGKAN
+- Log masuk Pages CMS menggunakan akaun GitHub Lisa.
+- Pemasangan/kelulusan Pages CMS GitHub App untuk centorahub/kobakti.
+- Upload poster melalui UI Pages CMS dan commit sebenar ke GitHub.
+- Deployment sebenar Cloudflare Pages dan domain.
+- Ujian hujung-ke-hujung selepas deployment pada telefon dan desktop.
+
+KESELAMATAN
+- Jangan simpan slip gaji, kad pengenalan, nombor akaun atau dokumen pemohon dalam GitHub, CMS atau folder media.
+- Borang hanya membuka WhatsApp dengan mesej praisi; pemohon perlu menekan Send sendiri dan menghantar slip gaji terus melalui WhatsApp.
+
+RUJUKAN RASMI
+- https://pagescms.org/docs/configuration/
+- https://pagescms.org/docs/configuration/media/
+- https://pagescms.org/docs/configuration/content/list/
+- https://pagescms.org/docs/quick-start/
